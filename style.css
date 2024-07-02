@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  /* Colors */
+
+  /* Primary */
+
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+
+  /* Neutral */
+
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+
+  /*  Body Copy
+
+ Font size: 15px */
+
+  /* Fonts */
+
+  --Family: "Poppins", sans-serif;
+  /* Weights: 200, 400, 600 */
+}
+body {
+  font-family: var(--Family);
+  color: var(--Very-Dark-Blue);
+  text-align: center;
+  background-color: var(--Very-Light-Gray);
+}
+#fh1 {
+  font-weight: 200;
+}
+p {
+  color: var(--Grayish-Blue);
+  font-weight: 400;
+}
+
+.services-card {
+  background-color: white;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 1px 4px 8px 0px var(--Very-Dark-Blue);
+  text-align: left;
+}
+.icons {
+  text-align: end;
+}
+#green {
+  border-top: 6px solid var(--Cyan);
+}
+#red {
+  border-top: 6px solid var(--Red);
+}
+#orange {
+  border-top: 6px solid var(--Orange);
+}
+#blue {
+  border-top: 6px solid var(--Blue);
+}
+@media(min-width:1000px){
+    .grid{
+        display: grid;
+        grid-template-rows: 33% 33% 33%;
+        grid-template-columns: 400px 400px 400px;
+        justify-content: center;
+
+    }
+    #red{
+        grid-column: 2;
+    }
+  #orange{
+    grid-row: 3;
+    grid-column: 2;
+  }
+  #green{
+    grid-row: 2;
+    grid-column: 1;
+  }
+  #blue{
+    grid-row: 2;
+    grid-column: 3;
+
+}
