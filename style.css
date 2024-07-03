@@ -63,28 +63,25 @@ p {
 #blue {
   border-top: 6px solid var(--Blue);
 }
-@media(min-width:1000px){
-    .grid{
-        display: grid;
-        grid-template-rows: 33% 33% 33%;
-        grid-template-columns: 400px 400px 400px;
-        justify-content: center;
-
-    }
-    #red{
-        grid-column: 2;
-    }
-  #orange{
-    grid-row: 3;
+/* media queries */
+@media (max-width: 1099px) {
+  body {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1218px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 400px);
+    justify-content: center;
+    align-items: center;
+  }
+  #orange {
+    grid-row: 2;
     grid-column: 2;
   }
-  #green{
-    grid-row: 2;
-    grid-column: 1;
+  #green,
+  #blue {
+    grid-row: span 2;
   }
-  #blue{
-    grid-row: 2;
-    grid-column: 3;
-
-}
 }
